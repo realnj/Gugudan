@@ -2,13 +2,11 @@
 
 public class Gugudan {
 	// 계산 method
-    public static int[] calculate(int times) {
-        int[] result = new int[9];
+    public static int[] calculate(int times, int max) {
+        int[] result = new int[max];
         for (int i = 0; i < result.length; i++) {
-            // 계산 결과를 배열에 저장
-        	result[i] = times * (i + 1);
+        		result[i] = times * (i + 1);
         }
-
         return result;
     }
 
